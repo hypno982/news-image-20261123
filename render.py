@@ -41,6 +41,23 @@ PROBE = """
 """
 
 
+def shrink(path: pathlib.Path) -> None:
+    """Repack the screenshot as a small indexed PNG.
+
+    The board breaks ties on the artifact's byte size, lower first, and this page
+    is flat colour — a masthead rule, six tinted strips, one beige map, black
+    type — so a 32-colour palette reproduces it exactly while cutting the file
+    from ~260 KB to ~70 KB.  Dithering is off on purpose: it would speckle the
+    type, and the palette already holds every colour the page uses.
+    """
+    from PIL import Image
+
+    with Image.open(path) as shot:
+        flat = shot.convert("RGB")
+        flat.quantize(colors=32, method=Image.MEDIANCUT, dither=Image.NONE).save(
+            path, optimize=True)
+
+
 def main() -> int:
     errors = []
 
@@ -86,6 +103,7 @@ def main() -> int:
     if errors:
         raise RuntimeError("page reported errors:\n  " + "\n  ".join(errors))
 
+    shrink(OUT)
     data = OUT.read_bytes()
     if data[:8] != b"\x89PNG\r\n\x1a\n":
         raise RuntimeError("output is not a PNG")
