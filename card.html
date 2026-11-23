@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Monday 23 November 2026 — The World in One Day</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1024px;height:1024px;overflow:hidden;background:#f7f3ea;color:#15120e;
+            font-family:"DejaVu Serif",Georgia,serif;-webkit-font-smoothing:antialiased}
+  .page{width:1024px;height:1024px;padding:12px 15px 10px;display:flex;flex-direction:column}
+
+  .mast{display:flex;align-items:flex-end;justify-content:space-between;gap:14px}
+  .kicker{font-family:"DejaVu Sans",Arial,sans-serif;font-size:10.5px;font-weight:bold;
+          letter-spacing:.27em;text-transform:uppercase;color:#a3221b;padding-bottom:9px;white-space:nowrap}
+  .date{text-align:right;line-height:.8}
+  .date .dow{font-family:"DejaVu Sans",Arial,sans-serif;font-size:26px;font-weight:bold;
+             letter-spacing:.42em;text-transform:uppercase;color:#a3221b;
+             padding-right:.42em;line-height:1}
+  .date .dmy{font-size:64px;font-weight:bold;letter-spacing:-.035em;white-space:nowrap;margin-top:1px}
+  .rule{height:4px;background:#15120e;margin-top:5px}
+  .thin{height:1px;background:#15120e;margin-top:2px}
+  .strap{display:flex;justify-content:space-between;font-family:"DejaVu Sans",Arial,sans-serif;
+         font-size:10px;font-weight:bold;letter-spacing:.13em;text-transform:uppercase;
+         padding:3px 0 0;color:#403a30;white-space:nowrap}
+  .strap b{color:#a3221b}
+
+  .nums{display:grid;grid-template-columns:repeat(6,1fr);margin-top:6px;border-top:1px solid #15120e;
+        border-bottom:1px solid #15120e}
+  .num{padding:3px 6px 4px;border-right:1px solid #cbc2ae}
+  .num:last-child{border-right:0}
+  .num .v{font-family:"DejaVu Sans",Arial,sans-serif;font-size:21px;font-weight:bold;line-height:1;
+          color:#a3221b;letter-spacing:-.02em}
+  .num .l{font-family:"DejaVu Sans",Arial,sans-serif;font-size:8.2px;line-height:1.14;
+          text-transform:uppercase;letter-spacing:.02em;color:#403a30;margin-top:1.5px}
+
+  .mapwrap{margin-top:5px;height:96px;position:relative}
+  .mapwrap svg{display:block;width:100%;height:96px}
+  .maplabel{position:absolute;right:2px;top:0;font-family:"DejaVu Sans",Arial,sans-serif;
+            font-size:8px;font-weight:bold;letter-spacing:.15em;text-transform:uppercase;color:#6f6655}
+
+  .stories{flex:1 1 auto;display:grid;grid-template-columns:repeat(4,1fr);column-gap:12px;
+           margin-top:4px;min-height:0}
+  .col{display:flex;flex-direction:column;min-width:0}
+  .sec{margin-bottom:4px}
+  .sec-h{font-family:"DejaVu Sans",Arial,sans-serif;font-size:8.6px;font-weight:bold;letter-spacing:.19em;
+         text-transform:uppercase;color:#a3221b;border-bottom:1.5px solid #a3221b;padding-bottom:1px;
+         margin-bottom:2px;display:flex;justify-content:space-between;white-space:nowrap}
+  .sec-h span{color:#8d8472;letter-spacing:.06em}
+  .hl{font-size:11.1px;line-height:1.15;font-weight:bold;padding:2.5px 0 3px;color:#15120e;
+      border-bottom:1px solid #dad2c0}
+  .sec .hl:last-child{border-bottom:0}
+
+  .foot{margin-top:4px;border-top:3px solid #15120e;padding-top:3px;display:flex;
+        justify-content:space-between;align-items:baseline;font-family:"DejaVu Sans",Arial,sans-serif;gap:10px}
+  .foot .l{font-size:10px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:#a3221b;white-space:nowrap}
+  .foot .r{font-size:7.6px;letter-spacing:.03em;text-transform:uppercase;color:#6f6655;text-align:right}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="mast">
+    <div class="kicker">The World in One Day</div>
+    <div class="date">
+      <div class="dow">Monday</div>
+      <div class="dmy">23 NOVEMBER 2026</div>
+    </div>
+  </div>
+  <div class="rule"></div>
+  <div class="thin"></div>
+  <div class="strap">
+    <div><b>Monday 23 November 2026</b> · 38 stories · 6 regions · every one reported today</div>
+    <div>overnight edition · 01:30 UTC</div>
+  </div>
+
+  <div class="nums">
+    <div class="num"><div class="v">NO DEAL</div><div class="l">Cop31 shuts in Türkiye without a climate pact</div></div>
+    <div class="num"><div class="v">11</div><div class="l">Killed in Russia's overnight strikes on Ukraine</div></div>
+    <div class="num"><div class="v">2</div><div class="l">Missiles and a drone cross into Poland; Nato answers</div></div>
+    <div class="num"><div class="v">3%</div><div class="l">Seoul's Kospi opens sharply lower on AI fears</div></div>
+    <div class="num"><div class="v">720-9</div><div class="l">India's record Test total against New Zealand</div></div>
+    <div class="num"><div class="v">83</div><div class="l">Molly Meldrum, Australia's music broadcaster, dies</div></div>
+  </div>
+
+  <div class="mapwrap">
+    <div class="maplabel">Where it happened · 38 pins</div>
+    <svg viewBox="0 0 1000 96" preserveAspectRatio="none" role="img" aria-label="World map with pins">
+      <g fill="#e2dac8" stroke="#c6bca4" stroke-width=".8" stroke-linejoin="round">
+        <path d="M30,12 L120,8 L235,7 L295,10 L338,22 L352,26 L318,27 L300,29 L286,36 L268,43 L228,42 L204,46 L178,39 L150,32 L150,26 L122,18 L66,17 L38,15 Z"/>
+        <path d="M280,53 L330,53 L364,60 L407,64 L392,76 L354,84 L320,92 L307,97 L300,93 L307,79 L284,69 L276,63 Z"/>
+        <path d="M470,19 L500,10 L543,9 L588,11 L616,28 L580,33 L529,34 L494,35 L470,30 Z"/>
+        <path d="M452,48 L500,40 L534,35 L592,40 L622,53 L646,54 L620,63 L598,75 L568,85 L548,85 L532,74 L524,58 L476,57 L452,51 Z"/>
+        <path d="M596,35 L624,33 L655,36 L672,44 L660,51 L632,53 L620,50 L602,42 Z"/>
+        <path d="M614,28 L670,24 L754,10 L893,11 L976,14 L948,20 L906,24 L892,31 L863,38 L841,42 L835,47 L808,49 L794,55 L780,58 L766,51 L746,46 L724,56 L702,47 L685,44 L670,40 L635,40 L627,33 L614,33 Z"/>
+        <path d="M818,76 L866,69 L908,71 L930,80 L922,88 L878,85 L831,84 L818,79 Z"/>
+        <path d="M936,89 L962,86 L978,91 L964,95 L940,95 Z"/>
+      </g>
+      <g fill="#a3221b">
+        <circle cx="172" cy="30" r="3.2"/><circle cx="212" cy="38" r="2.4"/>
+        <circle cx="316" cy="76" r="2.8"/><circle cx="392" cy="67" r="2.0"/>
+        <circle cx="505" cy="22" r="2.9"/><circle cx="538" cy="31" r="2.1"/>
+        <circle cx="524" cy="69" r="3.0"/><circle cx="562" cy="81" r="2.1"/>
+        <circle cx="646" cy="43" r="2.9"/><circle cx="612" cy="50" r="2.2"/>
+        <circle cx="800" cy="26" r="3.2"/><circle cx="884" cy="30" r="2.6"/>
+        <circle cx="758" cy="45" r="2.4"/><circle cx="870" cy="81" r="3.0"/>
+      </g>
+      <g fill="#6f6655" font-family="DejaVu Sans, Arial, sans-serif" font-size="7.4" font-weight="bold" letter-spacing="1.1">
+        <text x="172" y="22" text-anchor="middle">AMERICAS</text>
+        <text x="505" y="13" text-anchor="middle">EUROPE</text>
+        <text x="524" y="62" text-anchor="middle">AFRICA</text>
+        <text x="650" y="35" text-anchor="start">MIDDLE EAST</text>
+        <text x="806" y="17" text-anchor="middle">ASIA</text>
+        <text x="870" y="74" text-anchor="middle">OCEANIA</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="stories">
+
+    <div class="col">
+      <div class="sec">
+        <div class="sec-h">Europe <span>8</span></div>
+        <div class="hl">Russian overnight strikes kill 11 in the Kyiv region; rescuers hunt 15 missing under a hit apartment block</div>
+        <div class="hl">Nato promises to defend "every inch" of Poland after two missiles and a drone cross its border</div>
+        <div class="hl">Trump says he had "very good discussions" with Putin as Kyiv presses for Patriot interceptors</div>
+        <div class="hl">Cop31's president gavels the summit shut with no deal, blaming a handful of countries</div>
+        <div class="hl">Thousands march in Istanbul against the closure of pro-opposition media outlets</div>
+        <div class="hl">Ukraine is building an AI-run government designed to keep working through the war</div>
+        <div class="hl">Europe is bunkering down: bomb shelters hiding in plain sight in its cities</div>
+        <div class="hl">Britain's Lucy Powell pushes UK education in China despite security warnings</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="sec">
+        <div class="sec-h">Middle East <span>6</span></div>
+        <div class="hl">Washington eyes a lasting agreement to end the Iran war as Trump says Tehran has stepped up drone and missile attacks</div>
+        <div class="hl">Saudi Arabia and Bahrain report fresh attacks; the Houthis claim a strike on the Rabigh oil refinery</div>
+        <div class="hl">Strikes on Saudi airports threaten the region's religious travel, experts warn</div>
+        <div class="hl">The shekel is the world's third-worst performer as investors price in Israel's political paralysis</div>
+        <div class="hl">Fugitive criminals hunt new hideouts as the U.A.E. starts extraditing them</div>
+        <div class="hl">Gaza's children run a race to mark World Children's Day</div>
+      </div>
+      <div class="sec">
+        <div class="sec-h">Africa <span>5</span></div>
+        <div class="hl">Cop31's collapse "proves the summit has failed Africa": delegates from Kenya and the Marshall Islands walk away dismayed</div>
+        <div class="hl">The Cop31 president apologises to Ghana's Zanetor after cutting Africa's statement short</div>
+        <div class="hl">DR Congo and Kenya move to restore diplomatic ties after years of rupture</div>
+        <div class="hl">Ghana's soldiers reclaim 50 hectares of forest reserve wrecked by galamsey mining</div>
+        <div class="hl">Nigeria's coastal protection promises run into the reality of building them</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="sec">
+        <div class="sec-h">Asia <span>9</span></div>
+        <div class="hl">Seoul opens more than 3% lower as AI fears grip Korea; $115bn has gone from Kospi names</div>
+        <div class="hl">Asia-Pacific shares slide as the S&amp;P 500 enters correction territory</div>
+        <div class="hl">Beijing cuts the margin requirement to 80% and orders state support to steady its stock market</div>
+        <div class="hl">China demands Washington revoke its curbs on three Chinese telecom carriers</div>
+        <div class="hl">Japan's wealthy households grow 4.2% as accounts above ¥100m multiply</div>
+        <div class="hl">Heavy snow halts trains across Japan as winter arrives early</div>
+        <div class="hl">North Korea's Yongbyon expansion raises alarm over uranium output; Kim says he wants sovereignty, not expansion</div>
+        <div class="hl">Malaysia accepts the ICJ's genocide judgment in the Myanmar case</div>
+        <div class="hl">Nepal's new prime minister, Balen Shah, lands in Delhi for a 25-hour visit</div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="sec">
+        <div class="sec-h">Americas <span>6</span></div>
+        <div class="hl">US stock futures turn higher after the tech selloff that pushed the S&amp;P 500 into correction</div>
+        <div class="hl">Federal scientists flag new cancer concerns over a herbicide in wide use</div>
+        <div class="hl">The US tracked Alice Huang's contacts with a Chinese spy agency during the Nvidia affair</div>
+        <div class="hl">Mexican special forces take down a cartel leader, the FBI says, risking a bloody succession fight</div>
+        <div class="hl">Ossoff's widening Georgia coalition fuels 2028 talk he says he is not chasing</div>
+        <div class="hl">San Francisco rides an AI boom and quietly braces for the crash</div>
+      </div>
+      <div class="sec">
+        <div class="sec-h">Oceania <span>4</span></div>
+        <div class="hl">Molly Meldrum, the broadcaster who made Australian pop, dies at 83</div>
+        <div class="hl">India need six wickets to beat New Zealand after declaring on a record 720-9</div>
+        <div class="hl">New Zealand's retail volumes jump 2.2% in the quarter, four times the forecast</div>
+        <div class="hl">Toyota is ordered to pay Australian owners $750m</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    <div class="l">Monday 23 November 2026</div>
+    <div class="r">Europe · Middle East · Africa · Asia · Americas · Oceania &nbsp;—&nbsp; wires named with each story: Reuters, AP, AFP, BBC, Al Jazeera, The Guardian, Kyodo, Yonhap</div>
+  </div>
+
+</div>
+</body>
+</html>
